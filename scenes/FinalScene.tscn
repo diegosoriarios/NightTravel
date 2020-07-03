@@ -1,0 +1,246 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Bus.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/final_guy.gd" type="Script" id=3]
+[ext_resource path="res://models/guy.glb" type="PackedScene" id=4]
+[ext_resource path="res://models/15236_Backpack.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://scripts/Main.gd" type="Script" id=6]
+
+[sub_resource type="CubeMesh" id=10]
+
+[sub_resource type="Skin" id=11]
+bind_count = 7
+bind/0/bone = 6
+bind/0/pose = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+bind/1/bone = 32648
+bind/1/pose = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+bind/2/bone = 0
+bind/2/pose = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+bind/3/bone = 0
+bind/3/pose = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+bind/4/bone = 8
+bind/4/pose = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+bind/5/bone = 0
+bind/5/pose = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+bind/6/bone = 135357800
+bind/6/pose = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[sub_resource type="SpatialMaterial" id=12]
+
+[sub_resource type="BoxShape" id=13]
+extents = Vector3( 1, 1, 3.36546 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 1, 0.423064, 3.83433 )
+
+[sub_resource type="BoxShape" id=6]
+
+[sub_resource type="CylinderShape" id=7]
+
+[sub_resource type="Animation" id=8]
+resource_name = "move"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.518365, 1.33852 ), Vector3( -0.598562, 0.616391, 1.33852 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 180, 0 ) ]
+}
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 0.580173, 0.560292, 0.159866 )
+
+[node name="Main" type="Spatial"]
+script = ExtResource( 6 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.551597, 0.883477, 1.33662 )
+visible = false
+mesh = SubResource( 10 )
+skin = SubResource( 11 )
+material/0 = SubResource( 12 )
+
+[node name="Bus" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.883477, -5 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+material/35 = null
+material/36 = null
+material/37 = null
+material/38 = null
+material/39 = null
+material/40 = null
+material/41 = null
+material/42 = null
+material/43 = null
+material/44 = null
+material/45 = null
+material/46 = null
+material/47 = null
+material/48 = null
+material/49 = null
+material/50 = null
+material/51 = null
+material/52 = null
+material/53 = null
+material/54 = null
+material/55 = null
+material/56 = null
+material/57 = null
+material/58 = null
+material/59 = null
+material/60 = null
+material/61 = null
+material/62 = null
+material/63 = null
+material/64 = null
+material/65 = null
+material/66 = null
+material/67 = null
+material/68 = null
+material/69 = null
+material/70 = null
+material/71 = null
+material/72 = null
+material/73 = null
+material/74 = null
+material/75 = null
+material/76 = null
+material/77 = null
+material/78 = null
+material/79 = null
+material/80 = null
+material/81 = null
+material/82 = null
+material/83 = null
+material/84 = null
+material/85 = null
+material/86 = null
+material/87 = null
+material/88 = null
+material/89 = null
+material/90 = null
+material/91 = null
+material/92 = null
+material/93 = null
+
+[node name="RigidBody" type="StaticBody" parent="Bus"]
+
+[node name="CollisionShape2" type="CollisionShape" parent="Bus/RigidBody"]
+transform = Transform( 0.427, 0, 0, 0, 0.65531, 0, 0, 0, 1, 0.553856, 0, 5.45889 )
+shape = SubResource( 13 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Bus/RigidBody"]
+transform = Transform( 0.427, 0, 0, 0, 0.65531, 0, 0, 0, 1, -0.575984, 0, 5.45889 )
+shape = SubResource( 13 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Bus/RigidBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.693431, 5.42197 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="Bus/RigidBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.22578 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="Bus/RigidBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.4462 )
+shape = SubResource( 6 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.1, -0.00405014, 1.25164, 2.25347 )
+
+[node name="Restroom" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.55829 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Restroom"]
+transform = Transform( 0.50377, 0, 0, 0, 1, 0, 0, 0, 1, 0.584633, 0.733401, -0.128482 )
+shape = SubResource( 7 )
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.518365, 1.33852 )
+
+[node name="guy" parent="Spatial" instance=ExtResource( 4 )]
+transform = Transform( -8.14603e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -8.14603e-08, 0, 0, 0 )
+script = ExtResource( 3 )
+
+[node name="Animation" type="AnimationPlayer" parent="Spatial"]
+anims/move = SubResource( 8 )
+
+[node name="Backpack" type="MeshInstance" parent="."]
+transform = Transform( -0.005, 1.62921e-09, 2.65432e-16, 0, -8.14603e-10, 0.005, 1.62921e-09, 0.005, 8.14603e-10, -0.282, 0.853, -1.436 )
+mesh = ExtResource( 5 )
+material/0 = null
+
+[node name="Sit" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.637533, 1.01673, -1.58846 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Sit"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0916573, 0, 0.101211 )
+shape = SubResource( 9 )
+
+[node name="Leave" type="StaticBody" parent="."]
+transform = Transform( 1.88438, 0, 0, 0, 1, 0, 0, 0, 1.51066, 0.0331235, 1.01673, -3.14926 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Leave"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0916573, 0, 0.101211 )
+shape = SubResource( 9 )
+
+[node name="Lights" type="Spatial" parent="."]
+
+[node name="SpotLight" type="OmniLight" parent="Lights"]
+transform = Transform( 0.851421, -0.0160586, 0.524237, -0.524482, -0.0260736, 0.851022, 2.53692e-06, -0.999531, -0.0306221, 3.75, 2.118, 5 )
+
+[node name="SpotLight2" type="OmniLight" parent="Lights"]
+transform = Transform( -0.845631, -0.100424, -0.524236, -0.524482, -0.0260736, 0.851022, -0.099132, 0.994603, -0.0306221, -3.75, 2.118, -2.5 )
