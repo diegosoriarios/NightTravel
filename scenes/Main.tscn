@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://Bus.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -7,6 +7,106 @@
 [ext_resource path="res://scenes/FinalScene.tscn" type="PackedScene" id=5]
 [ext_resource path="res://models/15236_Backpack.obj" type="ArrayMesh" id=6]
 [ext_resource path="res://scripts/Main.gd" type="Script" id=7]
+[ext_resource path="res://audio/bus-interior.mp3" type="AudioStream" id=8]
+[ext_resource path="res://materials/bus_seat/Denim_001_OCC.jpg" type="Texture" id=9]
+[ext_resource path="res://materials/bus_seat/Denim_001_COLOR.jpg" type="Texture" id=10]
+[ext_resource path="res://materials/bus_seat/Denim_001_NRM.jpg" type="Texture" id=11]
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.0980392, 0.545098, 0.760784, 1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_texture = ExtResource( 10 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 11 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 9 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+uv1_scale = Vector3( 5, 5, 5 )
+
+[sub_resource type="SpatialMaterial" id=8]
+
+[sub_resource type="SpatialMaterial" id=9]
+albedo_color = Color( 0.207843, 0.196078, 0.196078, 1 )
+
+[sub_resource type="SpatialMaterial" id=30]
+albedo_texture = ExtResource( 10 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 11 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 9 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_color = Color( 0.176471, 0.176471, 0.176471, 1 )
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=14]
+
+[sub_resource type="SpatialMaterial" id=15]
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_color = Color( 1, 0.984314, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=17]
+
+[sub_resource type="SpatialMaterial" id=18]
+
+[sub_resource type="SpatialMaterial" id=19]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=20]
+albedo_color = Color( 1, 0.992157, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=21]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=22]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=23]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=24]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=25]
+albedo_texture = ExtResource( 10 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 11 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 9 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+uv1_scale = Vector3( 5, 5, 5 )
+
+[sub_resource type="SpatialMaterial" id=26]
+
+[sub_resource type="SpatialMaterial" id=27]
+
+[sub_resource type="SpatialMaterial" id=28]
+albedo_color = Color( 0.847059, 0.843137, 0.101961, 1 )
+
+[sub_resource type="SpatialMaterial" id=29]
+albedo_color = Color( 0.0588235, 0.054902, 0.0627451, 1 )
+
+[sub_resource type="SpatialMaterial" id=31]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 1, 1, 3.36546 )
@@ -24,100 +124,32 @@ script = ExtResource( 7 )
 [node name="Bus" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.883477, -5 )
 mesh = ExtResource( 1 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-material/5 = null
-material/6 = null
-material/7 = null
-material/8 = null
-material/9 = null
-material/10 = null
-material/11 = null
-material/12 = null
-material/13 = null
-material/14 = null
-material/15 = null
-material/16 = null
-material/17 = null
-material/18 = null
-material/19 = null
-material/20 = null
-material/21 = null
-material/22 = null
-material/23 = null
-material/24 = null
-material/25 = null
-material/26 = null
-material/27 = null
-material/28 = null
-material/29 = null
-material/30 = null
-material/31 = null
-material/32 = null
-material/33 = null
-material/34 = null
-material/35 = null
-material/36 = null
-material/37 = null
-material/38 = null
-material/39 = null
-material/40 = null
-material/41 = null
-material/42 = null
-material/43 = null
-material/44 = null
-material/45 = null
-material/46 = null
-material/47 = null
-material/48 = null
-material/49 = null
-material/50 = null
-material/51 = null
-material/52 = null
-material/53 = null
-material/54 = null
-material/55 = null
-material/56 = null
-material/57 = null
-material/58 = null
-material/59 = null
-material/60 = null
-material/61 = null
-material/62 = null
-material/63 = null
-material/64 = null
-material/65 = null
-material/66 = null
-material/67 = null
-material/68 = null
-material/69 = null
-material/70 = null
-material/71 = null
-material/72 = null
-material/73 = null
-material/74 = null
-material/75 = null
-material/76 = null
-material/77 = null
-material/78 = null
-material/79 = null
-material/80 = null
-material/81 = null
-material/82 = null
-material/83 = null
-material/84 = null
-material/85 = null
-material/86 = null
-material/87 = null
-material/88 = null
-material/89 = null
-material/90 = null
-material/91 = null
-material/92 = null
-material/93 = null
+material/0 = SubResource( 5 )
+material/1 = SubResource( 6 )
+material/8 = SubResource( 7 )
+material/19 = SubResource( 8 )
+material/20 = SubResource( 9 )
+material/29 = SubResource( 30 )
+material/30 = SubResource( 11 )
+material/31 = SubResource( 12 )
+material/42 = SubResource( 13 )
+material/43 = SubResource( 14 )
+material/44 = SubResource( 15 )
+material/45 = SubResource( 16 )
+material/51 = SubResource( 17 )
+material/52 = SubResource( 18 )
+material/56 = SubResource( 19 )
+material/79 = SubResource( 20 )
+material/80 = SubResource( 21 )
+material/81 = SubResource( 22 )
+material/82 = SubResource( 23 )
+material/83 = SubResource( 24 )
+material/84 = SubResource( 25 )
+material/85 = SubResource( 26 )
+material/86 = SubResource( 27 )
+material/87 = SubResource( 28 )
+material/88 = SubResource( 29 )
+material/92 = SubResource( 31 )
 
 [node name="RigidBody" type="StaticBody" parent="Bus"]
 
@@ -155,7 +187,6 @@ script = ExtResource( 3 )
 [node name="Backpack" type="MeshInstance" parent="."]
 transform = Transform( -0.005, 1.94707e-09, 8.51092e-17, 0, -2.18557e-10, 0.005, 1.94707e-09, 0.005, 2.18557e-10, -0.28207, 0.853343, -1.43598 )
 mesh = ExtResource( 6 )
-material/0 = null
 
 [node name="Lights" type="Spatial" parent="."]
 
@@ -166,3 +197,9 @@ light_energy = 2.0
 [node name="SpotLight2" type="OmniLight" parent="Lights"]
 transform = Transform( -0.845631, -0.100424, -0.524237, -0.524482, -0.0260736, 0.851022, -0.099132, 0.994603, -0.0306221, -3.75, 2.118, -2.5 )
 light_energy = 2.0
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="bus_interior" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 8 )
+autoplay = true
